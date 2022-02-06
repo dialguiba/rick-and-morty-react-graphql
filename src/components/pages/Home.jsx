@@ -9,6 +9,8 @@ export const Home = () => {
   const [characters, setCharacters] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  console.log("test");
+
   return (
     <div className="container">
       <h1>Rick & Morty</h1>
