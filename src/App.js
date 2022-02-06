@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useQuery } from "@apollo/client";
+import { Home } from "./components/pages/Home";
+import { getCharacters } from "./graphql/characters.js";
 
 function App() {
+  /* const EXCHANGE_RATES = char; */
+
+  /* const test = () => {
+    
+  } */
+
+  /* console.log(loading); */
+
+  /* console.log(data); */
+
+  /* ; */
+  /* console.log(data); */
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home />
     </div>
   );
 }
