@@ -10,7 +10,6 @@ export const SearchSection = ({ setCharacters, setLoading }) => {
     setLoading(true);
     executeSearch({ variables: { name: val } })
       .then((res) => {
-        console.log(res.data);
         setCharacters(res.data.characters.results);
         setLoading(false);
       })
