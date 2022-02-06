@@ -4,7 +4,7 @@ import App from "./App";
 
 import { HashRouter } from "react-router-dom";
 
-import { ApolloClient, InMemoryCache, ApolloProvider, useQuery, gql } from "@apollo/client";
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 const client = new ApolloClient({
   uri: process.env.REACT_APP_API_URL,

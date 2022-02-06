@@ -1,8 +1,7 @@
 import { useLazyQuery } from "@apollo/client";
-import React, { useState } from "react";
+import React from "react";
 import { getCharacters } from "../../graphql/characters";
 import { SearchInput } from "../molecules/SearchInput";
-import _ from "lodash";
 
 export const SearchSection = ({ setCharacters, setLoading }) => {
   const [executeSearch] = useLazyQuery(getCharacters);
